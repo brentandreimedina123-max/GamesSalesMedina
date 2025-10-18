@@ -71,7 +71,7 @@ function showStore(store) {
     .slice(0, 3)
     .map(item => `
       <div class="sale-item">
-        <a href="game.html" class="sale-link">${item}</a>
+        <a href="Game.html" class="sale-link">${item}</a>
       </div>
     `)
     .join("");
@@ -120,19 +120,6 @@ function toggleMore(store) {
 // --- Default view ---
 showStore("epic");
 
-// --- Rotating wide ad banners ---
-const adSets = [
-  { left: "ad1_left.jpg", center: "ad1_center.jpg", right: "ad1_right.jpg" },
-  { left: "ad2_left.jpg", center: "ad2_center.jpg", right: "ad2_right.jpg" },
-  { left: "ad3_left.jpg", center: "ad3_center.jpg", right: "ad3_right.jpg" }
-];
 
-window.addEventListener("DOMContentLoaded", () => {
-  const ad = document.querySelector(".ad-frame");
-  if (ad && adSets.length > 0) {
-    const randomSet = adSets[Math.floor(Math.random() * adSets.length)];
-    ad.querySelector(".ad-side.left").src = randomSet.left;
-    ad.querySelector(".ad-center").src = randomSet.center;
-    ad.querySelector(".ad-side.right").src = randomSet.right;
-  }
-});
+
+
