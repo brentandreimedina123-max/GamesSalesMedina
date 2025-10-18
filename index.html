@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Current Sales - GameSales</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-section">
+      <img src="Gamelogo.png" class="logo-image" alt="GameSales Logo">
+    </div>
+
+    <div class="nav-buttons">
+      <a href="top_sales.html"><button class="nav-btn">Top Sale</button></a>
+      <a href="index.html"><button class="nav-btn active">Current Sale</button></a>
+    </div>
+  </header>
+  <main>
+    <div class="center-logo">
+      <img id="store-logo" src="Epic.png" alt="Store Logo" />
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showStore('epic')">Epic Games</button>
+      <button class="tab-btn" onclick="showStore('steam')">Steam</button>
+      <button class="tab-btn" onclick="showStore('gog')">GOG Games</button>
+      <button class="tab-btn" onclick="showStore('ea')">EA App</button>
+    </div>
+
+    <div id="store-content" class="store-content">
+      <div class="sale-item">Fortress Siege – 75% OFF → $4.99</div>
+      <div class="sale-item">Dark Horizon – 50% OFF → $9.99</div>
+      <div class="sale-item">Soulborne: Revenant – 40% OFF → $17.99</div>
+    </div>
+
+    <button id="more-btn" class="more-btn" onclick="toggleMore()">More ⬇</button>
+  </main>
+
+  <footer>
+    <a href="top_sales.html"><button class="next-btn">Next ➜ Top Sales</button></a>
+  </footer>
+</body>
+</html>
